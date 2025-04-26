@@ -385,7 +385,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C29"
-			(at 3.4875 0.45 0)
+			(at -0.3625 1.8 0)
 			(layer "F.SilkS")
 			(uuid "c87537be-a1ba-42eb-b527-cb7b3c1e1d7f")
 			(effects
@@ -785,6 +785,7 @@
 		(property "Reference" "U2"
 			(at 2.7 2.25 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "f63c68a1-572b-4ccc-8947-9dd1330db146")
 			(effects
 				(font
@@ -1452,6 +1453,126 @@
 		(layer "Edge.Cuts")
 		(uuid "67b85137-f72d-44dd-a163-da1481eb448b")
 	)
+	(gr_text "3.3v"
+		(at 161.8 87.2 270)
+		(layer "F.SilkS")
+		(uuid "06baf21a-4b31-46d1-8422-b4c99159435d")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "MISO"
+		(at 170.4 88.8 90)
+		(layer "F.SilkS")
+		(uuid "0ecc73d3-9480-4b85-a8bb-b0538b5c63f0")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "AC_CS"
+		(at 170.4 94.4 90)
+		(layer "F.SilkS")
+		(uuid "15f75c91-a5f7-47a9-8375-3c1c32d11dee")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "INT2"
+		(at 161.8 89.4 270)
+		(layer "F.SilkS")
+		(uuid "2cd3b0f5-24a4-42ea-8506-5b11d370e0b5")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "SCK"
+		(at 170.4 83.6 90)
+		(layer "F.SilkS")
+		(uuid "5921931e-e27b-47ea-a6d4-458446ecee6d")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "MOSI"
+		(at 170.4 86 90)
+		(layer "F.SilkS")
+		(uuid "8824f346-5195-4a25-960d-4ec450473049")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND"
+		(at 161.8 92 270)
+		(layer "F.SilkS")
+		(uuid "940b921c-9653-4728-baf2-702491e82bcd")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GY_CS"
+		(at 161.8 84 270)
+		(layer "F.SilkS")
+		(uuid "a1056d8e-e009-4e6a-a729-bde9dcba82ca")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "INT1"
+		(at 170.4 91 90)
+		(layer "F.SilkS")
+		(uuid "fce020bb-b463-472c-83be-d173a8ab156f")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "PS"
+		(at 161.8 81.6 270)
+		(layer "F.SilkS")
+		(uuid "fdc27929-5720-4362-829f-9b9261b0e34d")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 166.151 88.5)
 		(end 165.6 88.5)
@@ -1806,14 +1927,6 @@
 		(uuid "25b05f60-ab9c-4d5b-ab5c-e401eb20fd59")
 	)
 	(segment
-		(start 168 86.5)
-		(end 171.25 86.5)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 5)
-		(uuid "39133573-7234-458b-bcaa-fbe9e189bc52")
-	)
-	(segment
 		(start 166.3 86.846929)
 		(end 166.3 86.55)
 		(width 0.2)
@@ -1846,6 +1959,14 @@
 		(uuid "860f8a4a-2349-4a3a-b723-4fb621435d47")
 	)
 	(segment
+		(start 168 86.5)
+		(end 171.25 86.5)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "8b3d25b7-4ae2-4ae6-9f90-65e63394d053")
+	)
+	(segment
 		(start 167.588445 86.5)
 		(end 168 86.5)
 		(width 0.2)
@@ -1854,20 +1975,20 @@
 		(uuid "ab078ea4-595b-4493-9a51-24ec135755e6")
 	)
 	(segment
+		(start 171.25 86.5)
+		(end 172.5 87.75)
+		(width 0.3)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "b6f34d96-c501-49c1-94e8-cade0314ea2d")
+	)
+	(segment
 		(start 166.3 86.55)
 		(end 166.43624 86.41376)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 5)
 		(uuid "c250ab6e-97bf-4db8-a5ac-eec79a80ce4b")
-	)
-	(segment
-		(start 171.25 86.5)
-		(end 172.5 87.75)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 5)
-		(uuid "ce143f6a-3a5e-445d-bb09-1cfa8c8dd7f2")
 	)
 	(segment
 		(start 167.249 85.59)
